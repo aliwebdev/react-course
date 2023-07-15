@@ -1,10 +1,9 @@
 import "./Card.css";
-import { movies } from "../movies";
 
-function Card() {
+function Card({movie}) {
   return (
     <div className="Card">
-    {movies.map( index => 
+    {movie.map(index => 
       <div className="card card--13">
       <h2 className="card__title">{index.title}</h2>
       <img
